@@ -43,7 +43,8 @@ function init() {
 	goto(path)
 
 	// Gets all desired links and binds the goto function to it
-	let links = $('a:not([target="_blank"], [rel="external"], [rel="download"], [download])')
+	let links = $('a:not([target="_blank"], [rel="external"], [rel="download"], [download], [href^="http://"], [href^="https://"])')
+
 	links.click(function(e){
 		e.preventDefault()
       	goto(e.target.pathname)
