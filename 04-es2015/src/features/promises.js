@@ -5,4 +5,5 @@ export function es5(cb) {
 }
 
 export function es6() {
+	return new Promise((res, rej) => res(cb(null, 10)))
 }
