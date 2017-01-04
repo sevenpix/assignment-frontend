@@ -27,5 +27,8 @@
     "serve-static": "^1.11.1",
     "time-grunt": "^1.2.1",
     "uglifyify": "^3.0.4"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
   }
 }

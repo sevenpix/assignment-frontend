@@ -119,6 +119,46 @@
         stroke-dashoffset: 3.5em;
       }
     }
+
+
+    /* styles and animations for the button */
+
+    .btn {
+      padding: 0;
+    }
+
+    .btn:hover {
+      cursor: pointer;
+    }
+
+    .slide {
+      width: 100%;
+      transition: width 1s;
+    }
+
+    .txt-commited {
+      opacity: 0;
+    }
+
+    .unhide {
+      transition: .5s opacity;
+      transition-delay: 1s;
+      opacity: 100;
+    }
+
+    .translate-arrow {
+      transform: translateX(280px);
+      transition: 1s;
+    }
+
+    /*  Firefox does not support setting the width of a svg with CSS yet,
+        so this is an alternative animation for Firefox. */
+    @-moz-document url-prefix() {
+      .slide {
+        transform: translateX(280px);
+        transition: 1s;
+      }
+    }
   </style>
 </head>
 <body>

@@ -1,3 +1,4 @@
+import $ from 'jquery'
 import router from './router'
 import homeTpl from './templates/home.hbs'
 import simpleTpl from './templates/simple.hbs'
@@ -44,3 +45,13 @@ router('/text', text)
 router('/interaction', interaction)
 router('*', notFound)
 router()
+
+
+/* Adds animation to the button */
+$(document).ready(function() {
+  $(".btn").click(function(){
+    $(".btn-hover rect").addClass("slide");
+    $(".txt-commited").addClass("unhide");
+    $(".arrow").addClass("translate-arrow");
+  });
+});
